@@ -1,1 +1,3 @@
-# trabalho-PI
+# INTEGRANTES
+* Lucas Diniz
+* Nicolas Steffens
