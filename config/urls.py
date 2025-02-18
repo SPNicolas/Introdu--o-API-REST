@@ -3,12 +3,12 @@
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
-from alunos.views import EstadoViewSet, CidadeViewSet, AlunoViewSet
+from biblioteca.views import LivroViewSet, AlunoViewSet, EmprestimoViewSet
 
 router = DefaultRouter()
-router.register(r'estados', EstadoViewSet)
-router.register(r'cidades', CidadeViewSet)
+router.register(r'livros', LivroViewSet)
 router.register(r'alunos', AlunoViewSet)
+router.register(r'emprestimos', EmprestimoViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
